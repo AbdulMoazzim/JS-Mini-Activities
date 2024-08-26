@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body{
+    transition: background-color 0.5s linear;
+    width: 50vw;
+    margin: auto;
+}
+.black {
+    transition: background-color 0.5s linear;
+    background-color: black;
+}
+.header {
+    margin: 40px 0;
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+button {
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+main div {
+    padding: 10px 0;
+}
+
+.pink1 {
+    border: #d23669;
+    background-color: #d23669;
+}
+.pink2 {
+    color: #d23669;
+}
+
+.date {
+    font-style: italic;
+    padding: 15px 0;
+}
+.white {
+    transition: color 0.5s linear;
+    color: white;
+}
