@@ -2,6 +2,12 @@
     margin: 0;
     padding: 0;
     font-family: sans-serif;
+    transition: all linear 0.5s;
+}
+
+.black {
+    height: 100vh;
+    background-color: #443f3fc9;
 }
 .nav {
     display: flex;
@@ -12,7 +18,8 @@
     margin: auto;
 }
 
-.nav ul {
+.links {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -20,11 +27,61 @@
     list-style: none;
 }
 
-.nav ul li {
+.links li {
     color: white;
     font-size: 19px;
     font-weight: 500;
 }
+.links div {
+    top: 15px;
+    left: -715px;
+    position: absolute;
+}
+#Product {
+    left: 540px;
+}
+
+#developers {
+    left: 750px;
+}
+#company {
+    left: 965px;;
+}
+.none {
+    display: none;
+}
+.product{
+    width: 363px;
+    border-radius: 10px;
+    padding: 35px;
+    height: 50px;
+    background-color: white;
+}
+.loginItems {
+    padding: 30px;
+}
+.product div{
+    transform: rotate(45deg);
+    width: 40px;
+    height: 40px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 2px;
+    left: 193px;
+}
+.product p, .loginItems p {
+    font-weight: 700;
+}
+.product ul, .loginItems ul { 
+    height: 55px;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+}
+.product ul a, .loginItems ul a {
+    text-decoration: none;
+}
+
 #menu {
     display: none;
 }
@@ -67,49 +124,23 @@
     text-align: right;
     width: 30vw;
 }
-#Product {
-    left: 540px;
+
+.login {
+    border-radius: 20px;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    width: 80vw;
+    height: 80vh;
+    left: 50%;
+    top: 50%;
+    background-color: #ffffff;
+}
+#img {
+    padding: 15px;
+    text-align: right;
+    cursor: pointer;
 }
 
-#developers {
-    left: 750px;
-}
-#company {
-    left: 965px;;
-}
-.none {
-    display: none;
-}
-.product {
-    width: 363px;
-    border-radius: 10px;
-    padding: 35px;
-    height: 50px;
-    background-color: white;
-    position: absolute;
-    top: 60px;
-}
-.product div {
-    transform: rotate(45deg);
-    width: 40px;
-    height: 40px;
-    background-color: #ffffff;
-    position: absolute;
-    top: 2px;
-    left: 193px;
-}
-.product p {
-    font-weight: 700;
-}
-.product ul { 
-    height: 55px;
-    justify-content: space-between;
-    display: flex;
-    align-items: center;
-}
-.product ul a {
-    text-decoration: none;
-}
 @media screen and (max-width: 1100px) {
     .nav {
         width: 90vw;
