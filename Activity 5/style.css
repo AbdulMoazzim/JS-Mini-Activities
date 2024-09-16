@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    transition: transform 0.3s linear;
+}
+.container {
+    width: 460px;
+    height: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 0px 1px black;
+    overflow: hidden;
+}
+.slide {
+    overflow-x: scroll;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+.btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
