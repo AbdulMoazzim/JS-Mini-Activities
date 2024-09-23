@@ -1,0 +1,25 @@
+html {
+    overflow: hidden;
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+#bg-img {
+    object-fit: cover;
+    object-position: center;
+    filter: blur(200px);
+    width: 100vw;
+    height: 100vh;
+}
+#counting {
+    font-weight: 600;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: white;
+    font-size: 48px;
+}
