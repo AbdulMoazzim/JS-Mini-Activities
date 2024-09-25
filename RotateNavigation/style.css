@@ -1,12 +1,17 @@
 html {
-    overflow: hidden;
+    overflow-x: hidden;
 }
 * {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
+    transition: transform 1s linear;
+
 }
 .nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     width: 200px;
     height: 200px;
     background-color: coral;
@@ -15,6 +20,16 @@ html {
     z-index: 2;
     top: -80px;
     left: -80px;
+}
+#close {
+    margin: -70px 0px 0px -6px;
+}
+#menu {
+    margin: -65px 0px -127px -140px;
+}
+.nav img {
+    width: 40px;
+    cursor: pointer;
 }
 .behind {
     width: 100vw;
@@ -42,17 +57,13 @@ html {
     padding-left: 40px;
 }
 .maincontent {
+    transform-origin: top left;
     width: 100vw;
-    height: 190vh;
+    height: max-content;
     position: absolute;
     padding-top: 100px;
     background-color: white;
     z-index: 1;
-}
-
-.rotate{
-    transform-origin: top left;
-    transform: rotate(-20deg);
 }
 
 .content {
