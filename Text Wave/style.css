@@ -1,0 +1,10 @@
+*{
+    margin: 0;
+    padding: 0;
+    transition: top 0.1s linear;
+}
+
+span {
+    position: relative;
+    top: 20px;
+}
