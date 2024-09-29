@@ -7,7 +7,7 @@ if (input) {
         const Target = event.target;
         if (div) {
             div.innerHTML = Target.value;
-            div.style.left = `${counter + Target.value}%`;
+            div.style.left = `${counter + Number(Target.value)}%`;
         }
     });
 }

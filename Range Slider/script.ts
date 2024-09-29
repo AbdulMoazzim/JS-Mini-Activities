@@ -8,7 +8,7 @@ if (input) {
         const Target = event.target as HTMLInputElement;
         if (div) {
             div.innerHTML = Target.value;
-            div.style.left = `${counter + Target.value}%`;
+            div.style.left = `${counter + Number(Target.value)}%`;
         }
     })
 }
